@@ -8,3 +8,14 @@ This repo is used as a starter for a _very basic_ HTML web application using no 
 
 ## Notes
 - starting point => https://docs.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=vanilla-javascript
+- Follow the above instructions was easy peasy ... a `test` website was live within minutes, with hardly any work at all.
+- Next step: Security => https://docs.microsoft.com/en-us/azure/static-web-apps/configuration + https://docs.microsoft.com/en-us/azure/static-web-apps/authentication-authorization?tabs=function
+
+## Adding security
+- add `staticwebapp.config.json`
+```
+{
+  "route": "/profile/index.html",
+  "allowedRoles": ["authenticated"]
+}
+```
